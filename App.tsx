@@ -12,7 +12,7 @@ import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="font-sans text-text_primary min-h-screen selection:bg-glow_primary selection:text-white overflow-x-hidden">
+    <div className="font-sans text-neutral-200 min-h-screen bg-black selection:bg-white selection:text-black overflow-x-hidden">
       <Background />
 
       <Navbar />

@@ -8,18 +8,18 @@ export const Hero: React.FC = () => {
     <section id="hero" className="min-h-screen flex flex-col justify-center items-center relative pt-32 pb-20 px-4 overflow-hidden">
 
       {/* Background Spotlight */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-glow_primary/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
 
       {/* Content Container */}
       <div className="max-w-5xl mx-auto text-center z-10">
 
         {/* Status Pill */}
-        <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-md mb-8 animate-fade-in-up">
+        <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-md mb-8 animate-fade-in-up">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-neutral-300"></span>
           </span>
-          <span className="text-emerald-300 text-xs font-mono tracking-wider font-semibold">OPEN TO WORK</span>
+          <span className="text-neutral-300 text-xs font-mono tracking-wider font-semibold">OPEN TO WORK</span>
         </div>
 
         {/* Main Typography */}
@@ -27,20 +27,20 @@ export const Hero: React.FC = () => {
           Vinayaka.
         </h1>
 
-        <p className="text-xl md:text-3xl text-text_secondary max-w-3xl mx-auto font-light leading-relaxed mb-10 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          Architecting <span className="text-glow_primary font-normal">secure backends</span> and crafting <span className="text-glow_secondary font-normal">immersive frontends</span> for the next generation of web.
+        <p className="text-xl md:text-3xl text-neutral-400 max-w-3xl mx-auto font-light leading-relaxed mb-10 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          Architecting <span className="text-white font-normal">secure backends</span> and crafting <span className="text-neutral-300 font-normal">immersive frontends</span> for the next generation of web.
         </p>
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <a
             href="#projects"
-            className="group relative px-8 py-4 bg-white text-bg_void font-bold text-lg rounded-full overflow-hidden transition-transform hover:scale-105"
+            className="group relative px-8 py-4 bg-white text-black font-bold text-lg rounded-full overflow-hidden transition-transform hover:scale-105"
           >
             <span className="relative z-10 flex items-center">
               View My Work <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-glow_primary to-glow_secondary opacity-0 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 to-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity mix-blend-multiply"></div>
           </a>
 
           <a
@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
           {badges.map((badge, index) => (
             <div
               key={badge}
-              className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-sm font-mono text-slate-400 backdrop-blur-sm hover:text-white hover:border-glow_primary/50 transition-colors cursor-default"
+              className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-sm font-mono text-neutral-400 backdrop-blur-sm hover:text-white hover:border-white/50 transition-colors cursor-default"
             >
               <Terminal size={14} />
               <span>{badge}</span>
@@ -66,21 +66,21 @@ export const Hero: React.FC = () => {
 
         {/* Social Actions */}
         <div className="flex space-x-6 justify-center animate-fade-in-up opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-          <a href="#" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-glow_secondary/50 transition-all text-slate-300 hover:text-white group">
-            <Github size={24} className="group-hover:text-glow_secondary transition-colors" />
+          <a href="#" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
+            <Github size={24} className="transition-colors" />
           </a>
-          <a href="#" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-glow_primary/50 transition-all text-slate-300 hover:text-white group">
-            <Linkedin size={24} className="group-hover:text-glow_primary transition-colors" />
+          <a href="#" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
+            <Linkedin size={24} className="transition-colors" />
           </a>
-          <a href="mailto:email@example.com" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-emerald-500/50 transition-all text-slate-300 hover:text-white group">
-            <Mail size={24} className="group-hover:text-emerald-400 transition-colors" />
+          <a href="mailto:email@example.com" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
+            <Mail size={24} className="transition-colors" />
           </a>
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <a href="#experience" className="absolute bottom-10 animate-bounce cursor-pointer p-2 rounded-full hover:bg-white/5 transition-colors">
-        <ArrowDown className="text-slate-500" size={24} />
+        <ArrowDown className="text-neutral-500" size={24} />
       </a>
     </section>
   );

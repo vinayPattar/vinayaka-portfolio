@@ -23,20 +23,19 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
-        isScrolled 
-          ? 'bg-bg_void/80 backdrop-blur-md border-white/10 py-4' 
-          : 'bg-transparent border-transparent py-6'
-      }`}
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled
+        ? 'bg-black/80 backdrop-blur-md border-white/10 py-4'
+        : 'bg-transparent border-transparent py-6'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="flex items-center space-x-2 group">
-          <div className="p-2 bg-gradient-to-tr from-glow_primary to-glow_secondary rounded-lg group-hover:rotate-12 transition-transform">
+          <div className="p-2 bg-gradient-to-tr from-white/20 to-white/5 border border-white/10 rounded-lg group-hover:rotate-12 transition-transform">
             <Code2 size={24} className="text-white" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-white group-hover:text-glow_secondary transition-colors">
+          <span className="text-xl font-bold tracking-tight text-white group-hover:text-neutral-300 transition-colors">
             Vinayaka.
           </span>
         </a>
@@ -44,16 +43,16 @@ export const Navbar: React.FC = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
+            <a
+              key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
+              className="text-sm font-medium text-neutral-300 hover:text-white transition-colors relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-glow_secondary transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
             </a>
           ))}
-          <a 
+          <a
             href="#contact"
             className="px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white text-sm font-medium transition-all hover:scale-105 ml-2"
           >
@@ -62,7 +61,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-white p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -72,24 +71,24 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-bg_void/95 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col space-y-4 shadow-2xl">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col space-y-4 shadow-2xl">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
+            <a
+              key={link.name}
               href={link.href}
-              className="text-lg font-medium text-slate-300 hover:text-white"
+              className="text-lg font-medium text-neutral-300 hover:text-white"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <a 
-              href="#contact"
-              className="text-lg font-medium text-glow_primary"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Contact Me
-            </a>
+          <a
+            href="#contact"
+            className="text-lg font-medium text-white"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Contact Me
+          </a>
         </div>
       )}
     </nav>

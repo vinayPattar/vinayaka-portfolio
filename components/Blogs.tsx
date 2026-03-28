@@ -37,14 +37,14 @@ export const Blogs: React.FC = () => {
   return (
     <section className="py-24 px-4 max-w-7xl mx-auto relative">
       {/* Decorative background blur for this section */}
-      <div className="absolute right-0 top-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+      <div className="absolute right-0 top-1/4 w-96 h-96 bg-neutral-400/10 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
 
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">Technical Insights</h2>
-          <p className="text-text_secondary text-lg">Thoughts on architecture, security, and code.</p>
+          <p className="text-neutral-400 text-lg">Thoughts on architecture, security, and code.</p>
         </div>
-        <a href="#" className="flex items-center space-x-2 text-glow_primary hover:text-white transition-colors group">
+        <a href="#" className="flex items-center space-x-2 text-neutral-300 hover:text-white transition-colors group">
           <span className="font-mono">View All Articles</span>
           <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </a>
@@ -55,7 +55,7 @@ export const Blogs: React.FC = () => {
           <GlassCard key={index} hoverEffect={true} noPadding={true} className="flex flex-col h-full group cursor-pointer">
             {/* Image Header */}
             <div className="h-48 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-t from-bg_void to-transparent opacity-60 z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 z-10"></div>
               <img
                 src={blog.imageUrl}
                 alt={blog.title}
@@ -70,21 +70,21 @@ export const Blogs: React.FC = () => {
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
-              <div className="flex items-center text-xs text-slate-400 font-mono mb-3 space-x-3">
+              <div className="flex items-center text-xs text-neutral-400 font-mono mb-3 space-x-3">
                 <span>{blog.date}</span>
-                <span className="w-1 h-1 rounded-full bg-slate-600"></span>
+                <span className="w-1 h-1 rounded-full bg-neutral-600"></span>
                 <span className="flex items-center"><BookOpen size={10} className="mr-1" /> {blog.readTime}</span>
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-3 leading-tight group-hover:text-glow_primary transition-colors">
+              <h3 className="text-xl font-bold text-white mb-3 leading-tight transition-colors">
                 {blog.title}
               </h3>
 
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3">
+              <p className="text-neutral-400 text-sm leading-relaxed mb-6 line-clamp-3">
                 {blog.excerpt}
               </p>
 
-              <div className="mt-auto pt-4 border-t border-white/5 flex items-center text-sm font-semibold text-glow_secondary group-hover:text-white transition-colors">
+              <div className="mt-auto pt-4 border-t border-white/5 flex items-center text-sm font-semibold text-neutral-300 group-hover:text-white transition-colors">
                 Read Article <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>

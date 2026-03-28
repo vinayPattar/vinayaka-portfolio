@@ -42,7 +42,7 @@ export const Projects: React.FC = () => {
       <div className="flex items-center space-x-4 mb-16 justify-end">
         <div className="h-[1px] flex-1 bg-gradient-to-l from-white/20 to-transparent"></div>
         <div className="flex items-center space-x-2">
-          <Code2 className="text-glow_secondary" />
+          <Code2 className="text-neutral-300" />
           <h2 className="text-3xl font-bold text-white text-right">Featured Projects</h2>
         </div>
       </div>
@@ -53,7 +53,7 @@ export const Projects: React.FC = () => {
             <GlassCard key={index} hoverEffect={true} noPadding={true} className="flex flex-col h-full group">
               {/* Image Section with Overlay */}
               <div className="relative h-48 w-full overflow-hidden">
-                <div className="absolute inset-0 bg-bg_void/20 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+                <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
                 <img
                   src={project.imageUrl}
                   alt={project.title}
@@ -69,19 +69,19 @@ export const Projects: React.FC = () => {
               {/* Content Section */}
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-glow_secondary transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white transition-colors duration-300">
                     {project.title}
                   </h3>
                 </div>
 
-                <p className="text-text_secondary text-sm mb-6 flex-grow leading-relaxed">
+                <p className="text-neutral-400 text-sm mb-6 flex-grow leading-relaxed">
                   {project.desc}
                 </p>
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((t, i) => (
-                    <span key={i} className="px-2 py-1 text-[10px] font-mono text-slate-300 bg-white/5 rounded border border-white/5">
+                    <span key={i} className="px-2 py-1 text-[10px] font-mono text-neutral-300 bg-white/5 rounded border border-white/5">
                       {t}
                     </span>
                   ))}
@@ -93,7 +93,7 @@ export const Projects: React.FC = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-2 py-2.5 rounded-lg bg-gradient-to-r from-glow_primary to-indigo-600 text-white font-semibold text-sm hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] transition-all active:scale-95"
+                    className="flex items-center justify-center space-x-2 py-2.5 rounded-lg bg-white text-black font-semibold text-sm hover:shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all active:scale-95"
                   >
                     <span>View Live</span>
                     <ExternalLink size={14} />
