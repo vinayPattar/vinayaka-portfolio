@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-neutral-300"></span>
           </span>
-          <span className="text-neutral-300 text-xs font-mono tracking-wider font-semibold">OPEN TO WORK</span>
+          <span className="text-neutral-300 text-xs font-mono tracking-wider font-semibold">ENGINEERING END-TO-END SYSTEMS</span>
         </div>
 
         {/* Main Typography */}
