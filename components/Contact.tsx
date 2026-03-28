@@ -9,10 +9,9 @@ export const Contact: React.FC = () => {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Let's Build Together</h2>
-          <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss modern backend architecture?
-            My inbox is always open.
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Turning Ideas into Scalable Digital Products</h2>
+          <p className="text-lg text-neutral-400 max-w-4xl mx-auto">
+            I work across the entire stack — frontend, backend, cloud, and analytics — to build systems that are not just functional, but measurable and growth-ready. From development to SEO and Ad integrations, I help bring products to life with real-world impact.
           </p>
         </div>
 
@@ -31,7 +30,7 @@ export const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="text-sm text-neutral-400 font-mono mb-1">Email Me</p>
-                      <a href="mailto:contact@vinayaka.dev" className="text-white hover:text-neutral-300 transition-colors text-lg font-medium">
+                      <a href="mailto:vinaypattar383@gmail.com" className="text-white hover:text-neutral-300 transition-colors text-lg font-medium">
                         vinaypattar383@gmail.com
                       </a>
                     </div>
@@ -56,7 +55,7 @@ export const Contact: React.FC = () => {
 
               <div className="mt-12 pt-8 border-t border-white/10">
                 <p className="text-neutral-400 text-sm italic">
-                  "The best way to predict the future is to invent it."
+                  "Turning complex ideas into elegant, scalable software solutions."
                 </p>
               </div>
             </GlassCard>
