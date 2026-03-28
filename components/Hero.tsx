@@ -66,13 +66,13 @@ export const Hero: React.FC = () => {
 
         {/* Social Actions */}
         <div className="flex space-x-6 justify-center animate-fade-in-up opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-          <a href="#" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
+          <a href="https://github.com/vinayPattar" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
             <Github size={24} className="transition-colors" />
           </a>
-          <a href="#" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
+          <a href="https://www.linkedin.com/in/vinayaka-pattar/" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
             <Linkedin size={24} className="transition-colors" />
           </a>
-          <a href="mailto:email@example.com" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
+          <a href="mailto:vinaypattar383@gmail.com" className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-110 hover:border-white/50 transition-all text-neutral-300 hover:text-white group">
             <Mail size={24} className="transition-colors" />
           </a>
         </div>
