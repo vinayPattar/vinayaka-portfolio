@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail, ArrowRight, Terminal } from 'lucide-react';
 
-const badges = ["Spring Boot", "ReactJS", "AWS", "Supabase"];
+const badges = ["TypeScript", "ReactJS", "AWS", "Supabase"]; //"Spring Boot"
 
 export const Hero: React.FC = () => {
   return (

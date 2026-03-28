@@ -46,7 +46,7 @@ export const Skills: React.FC = () => {
               </div>
 
               {/* Connecting Line */}
-              <div className="h-16 w-[1px] bg-gradient-to-b from-white/20 to-transparent"></div>
+              <div className="h-16 w-[2px] bg-gradient-to-b from-white/20 to-transparent"></div>
 
               {/* Skills List */}
               <div className="flex flex-col gap-3">
@@ -57,8 +57,8 @@ export const Skills: React.FC = () => {
                       px-4 py-2 rounded-full 
                       bg-white/5 border border-white/5 
                       backdrop-blur-sm
-                      text-neutral-300 font-mono text-sm
-                      hover:bg-white/10 hover:border-white/20 hover:text-white
+                      text-neutral-300 font-mono text-sm border-white/20
+                      hover:bg-white/10 hover:border-white/10 hover:text-white
                       hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]
                       transition-all duration-300 transform hover:-translate-y-1
                     "
